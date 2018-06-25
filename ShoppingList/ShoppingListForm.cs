@@ -12,7 +12,7 @@ namespace ShoppingList
             InitializeComponent();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
             checkedListBox.Items.Add(textBox.Text);
             textBox.Clear();
@@ -20,7 +20,7 @@ namespace ShoppingList
             addButton.Enabled = false;
         }
 
-        private void checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void CheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (checkedListBox.SelectedItems.Count != 0)
             {
@@ -31,7 +31,7 @@ namespace ShoppingList
             }
         }
 
-        private void downButton_Click(object sender, EventArgs e)
+        private void DownButton_Click(object sender, EventArgs e)
         {
             int highestIndex = 0;
             for (int i = 0; i < checkedListBox.Items.Count; i++)
@@ -66,7 +66,7 @@ namespace ShoppingList
             checkedListBox.EndUpdate();
         }
 
-        private void removeButton_Click(object sender, EventArgs e)
+        private void RemoveButton_Click(object sender, EventArgs e)
         {
             if (checkedListBox.Items.Count > 0)
             {
@@ -77,7 +77,7 @@ namespace ShoppingList
             downButton.Enabled = false;
         }
 
-        private void textBox_TextChanged(object sender, EventArgs e)
+        private void TextBox_TextChanged(object sender, EventArgs e)
         {
             if (textBox.Text != null)
             {
@@ -95,7 +95,7 @@ namespace ShoppingList
             }
         }
 
-        private void upButton_Click(object sender, EventArgs e)
+        private void UpButton_Click(object sender, EventArgs e)
         {
             int lowestIndex = checkedListBox.Items.Count - 1;
 

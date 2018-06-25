@@ -46,7 +46,7 @@
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // deleteButton
             // 
@@ -60,7 +60,7 @@
             this.deleteButton.TabIndex = 2;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.Click += new System.EventHandler(this.removeButton_Click);
+            this.deleteButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // textBox
             // 
@@ -70,7 +70,7 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(131, 20);
             this.textBox.TabIndex = 3;
-            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            this.textBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
             // 
             // checkedListBox
             // 
@@ -82,7 +82,7 @@
             this.checkedListBox.Name = "checkedListBox";
             this.checkedListBox.Size = new System.Drawing.Size(293, 229);
             this.checkedListBox.TabIndex = 4;
-            this.checkedListBox.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_SelectedIndexChanged);
+            this.checkedListBox.SelectedIndexChanged += new System.EventHandler(this.CheckedListBox_SelectedIndexChanged);
             // 
             // upButton
             // 
@@ -95,7 +95,7 @@
             this.upButton.TabIndex = 5;
             this.upButton.Text = "Up";
             this.upButton.UseVisualStyleBackColor = true;
-            this.upButton.Click += new System.EventHandler(this.upButton_Click);
+            this.upButton.Click += new System.EventHandler(this.UpButton_Click);
             // 
             // downButton
             // 
@@ -108,7 +108,7 @@
             this.downButton.TabIndex = 6;
             this.downButton.Text = "Down";
             this.downButton.UseVisualStyleBackColor = true;
-            this.downButton.Click += new System.EventHandler(this.downButton_Click);
+            this.downButton.Click += new System.EventHandler(this.DownButton_Click);
             // 
             // ShoppingListForm
             // 
