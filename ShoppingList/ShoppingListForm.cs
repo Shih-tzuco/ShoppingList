@@ -14,6 +14,7 @@ namespace ShoppingList
 
         private void AddButton_Click(object sender, EventArgs e)
         {
+            textBox.Text = textBox.Text.Trim();
             checkedListBox.Items.Add(textBox.Text);
             textBox.Clear();
             textBox.Focus();
@@ -89,7 +90,6 @@ namespace ShoppingList
                 else
                 {
                     name = textBox.Text;
-                    textBox.Text = textBox.Text.Trim();
                     addButton.Enabled = true;
                 }
             }
