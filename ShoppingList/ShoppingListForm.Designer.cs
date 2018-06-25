@@ -123,7 +123,7 @@
             this.Controls.Add(this.addButton);
             this.Name = "ShoppingListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Shopping List";
             this.ResumeLayout(false);
             this.PerformLayout();
 
