@@ -12,13 +12,18 @@ namespace ShoppingList
             InitializeComponent();
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        private void Add()
         {
             textBox.Text = textBox.Text.Trim();
             checkedListBox.Items.Add(textBox.Text);
             textBox.Clear();
             textBox.Focus();
             addButton.Enabled = false;
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            Add();
         }
 
         private void CheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -80,18 +85,25 @@ namespace ShoppingList
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            if (textBox.Text != null)
+            for (int i = 0; i < textBox.Text.Length; i++)
             {
-                if (checkedListBox.Items.Contains(textBox.Text))
+                if (textBox.Text[i] != ' ')
                 {
-                    name = textBox.Text;
-                    addButton.Enabled = false;
-                }
-                else
-                {
-                    name = textBox.Text;
                     addButton.Enabled = true;
                 }
+            }
+            name = textBox.Text;
+            foreach (string item in checkedListBox.Items)
+            {
+                name = textBox.Text.Trim();
+                if (item.Equals(name))
+                {
+                    addButton.Enabled = false;
+                }
+            }
+            if (textBox.Text.Length == 0)
+            {
+                addButton.Enabled = false;
             }
         }
 
